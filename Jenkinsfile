@@ -2,8 +2,8 @@ pipeline {
 
   environment {
     VERSION = '1.0'
-    DOCKER_ID = 'silviaclaire'
-    AWS_REGION = 'us-west-2'
+    DOCKER_ID = 'bogsolido'
+    AWS_REGION = 'ap-southeast-1'
     CLUSTER_NAME = 'aws-eks-cluster'
     REGISTRY_CREDENTIAL_ID = 'dockerhub'
 
