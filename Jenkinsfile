@@ -18,7 +18,7 @@ pipeline {
     stage('Lint') {
       steps{
         // lint all .py files; disable import error
-        sh 'find . -type f -name "*.py" | xargs ~/.local/bin/pylint --disable=R,C,W1203,E0401'
+        sh 'find . -type f -name "*.py" | xargs pylint --disable=R,C,W1203,E0401'
         sh 'hadolint Dockerfile'
       }
     }
